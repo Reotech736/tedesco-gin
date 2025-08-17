@@ -12,10 +12,9 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: [
-      'http://192.168.2.92:3000',
-      // スマホ検証でWindows側のIPから叩く場合はここを自分のIPに
-      // 例: 'http://192.168.2.92:3000',
-      /\.vercel\.app$/ // デプロイ後の許可（必要に応じて）
+        'http://localhost:3000',
+        'http://192.168.2.92:3000',
+        /\.vercel\.app$/ // デプロイ後の許可（必要に応じて）
     ]
   }
 });

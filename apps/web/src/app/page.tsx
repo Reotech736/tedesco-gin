@@ -52,10 +52,6 @@ export default function Home() {
             参加
           </button>
         </form>
-
-        <p className="text-center text-xs text-slate-400">
-          まだ通信はダミーです。URL（/room/XXXXXX）を友達に共有すると合流できます。
-        </p>
       </div>
     </main>
   );
