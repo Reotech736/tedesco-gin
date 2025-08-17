@@ -42,7 +42,8 @@ export default function Home() {
             onChange={(e) => setCode(e.target.value.replace(/[^0-9a-z]/gi, ''))}
             placeholder="例: 7K3FQJ"
             className="w-full rounded-xl px-4 py-3 text-slate-900"
-            inputMode="latin-prose"
+            inputMode="text"
+            autoCapitalize="characters"
             maxLength={8}
           />
           <button
